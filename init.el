@@ -32,9 +32,6 @@
   `(add-to-list 'el-get-sources ',item))
 
 
-(el-get-add
- (:name nxhtml))
-
 ;; (el-get-add
 ;;  (:name ropemacs))
 
@@ -389,22 +386,23 @@ minibuffer to ease cutting and pasting."
 (setq inferior-lisp-program "java -cp /home/mishok/.clojure/clojure.jar:/home/mishok/.clojure/clojure-contrib.jar clojure.main")
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
  '(ecb-options-version "2.33beta2")
+ '(el-get-standard-packages (quote ("el-get" "highlight-parentheses" "yasnippet" "magit" "ac-dabbrev" "ac-slime" "ack" "active-menu" "adoc-mode" "ahg" "android-mode" "ansi" "ant" "any-ini-mode" "anything" "apel" "asciidoc" "auctex" "auto-complete-clang" "auto-complete-etags" "auto-complete-extension" "auto-complete" "auto-dictionnary" "auto-install" "autofit-frame" "autopair" "babel" "bbcode-mode" "bbdb-vcard" "bbdb" "blender-python-mode" "bookmark+" "breadcrumb" "browse-kill-ring" "buffer-move" "byte-code-cache" "caml-mode" "cedet" "chuck-mode" "circe" "cisco-router-mode" "clevercss" "clojure-mode" "cmake-mode" "coffee-mode" "color-theme-almost-monokai" "color-theme-chocolate-rain" "color-theme-desert" "color-theme-ir-black" "color-theme-mac-classic" "color-theme-railscasts" "color-theme-sanityinc" "color-theme-solarized" "color-theme-subdued" "color-theme-tango-2" "color-theme-tango" "color-theme-twilight" "color-theme-zen-and-art" "color-theme-zenburn" "color-theme" "command-frequency" "crontab-mode" "csharp-mode" "cssh" "csv-mode" "csv-nav" "csv" "darcsum" "db-sql" "dbgr" "diff-git" "dig" "diminish" "dired+" "dired-details" "dired-plus" "dired-single" "dired-sync" "dired-view" "dirtree" "distel" "django-mode" "dmacro" "doc-mode" "doxymacs" "drag-stuff" "dsvn" "dtrt-indent" "durendal" "dvc" "ecb" "edit-server" "egg" "egocentric" "el-expectations" "elein" "elhome" "elscreen" "elunit" "emacs-goodies-el" "emacs-jabber" "emacs-textmate" "emacs-w3m" "emacschrome" "emms" "enclose" "ensime" "eol-conversion" "erc-extras" "erc-highlight-nicknames" "erc-track-score" "erc" "ergoemacs-keybindings" "erlware-mode" "escreen" "ess" "ethan-wspace" "fic-ext-mode" "filladapt" "fit-frame" "flex-mode" "flim" "flyguess" "flymake-fringe-icons" "flymake-point" "flymake-ruby" "folding" "frame-cmds" "frame-fns" "fringe-helper" "fsharp-mode" "full-ack" "fuzzy-format" "g-client" "geiser" "gist" "git-blame" "git-commit-mode" "git-emacs" "git-modeline" "gnugo" "gnuplot-mode" "gnus-gravatar" "gnus-identities" "go-mode" "google-maps" "google-weather" "goto-last-change" "gravatar" "grep+" "growl" "haml-mode" "haskell-mode-exts" "haskell-mode" "highlight-indentation" "highlight-symbol" "hl-sexp" "hs-lint" "html-script-src" "icomplete+" "ido-hacks" "iedit" "imaxima" "initsplit" "io-mode" "ioccur" "ipython" "java-mode-indent-annotations" "js-comint" "js2-mode" "json" "keats" "keywiz" "kpm-list" "levenshtein" "lisppaste" "list-processes+" "lively" "load-relative" "loc-changes" "lookout" "lua-mode" "magithub" "mailcrypt" "mailq" "markdown-mode" "matlab-mode" "maxframe" "mediawiki" "mingus" "minimap" "mmm-mode" "mo-git-blame" "mode-compile" "moz-repl" "multi-term" "muse-blog" "muse" "mwe-log-commands" "n3-mode" "nagios-mode" "naquadah-theme" "nav" "nognus" "notify" "notmuch" "nsis-mode" "nterm" "oauth" "offlineimap" "openwith" "org-buffers" "org-fstree" "org-mode" "org-website" "org2blog" "osc" "package" "package24" "paredit" "pastebin" "pg" "pgsql-linum-format" "php-mode-improved" "php-mode" "pkgbuild-mode" "planner" "po-mode" "point-stack" "pointback" "popup-kill-ring" "pos-tip" "pov-mode" "predictive" "processing-mode" "project-local-variables" "prolog-el" "psvn" "puppet-mode" "pylookup" "pymacs" "python-mode" "python-pep8" "python.el" "qmake-mode" "quack" "rainbow-delimiters" "rainbow-mode" "rcirc-groups" "rdebug" "rect-mark" "redshank" "reftex" "regex-tool" "remember" "revive" "rhtml-mode" "ri-emacs" "rinari" "ropemacs" "rspec-mode" "rst-mode" "rt-liberation" "ruby-block" "ruby-compilation" "ruby-electric" "ruby-end" "ruby-mode" "rudel" "rvm-el" "sass-mode" "scratch" "scss-mode" "semi" "session" "shell-current-directory" "shime" "sicp" "skype" "slime" "smart-tab" "smartchr" "smarttabs" "smarty-mode" "sml-mode" "sml-modeline" "smooth-scroll" "smooth-scrolling" "ssh-config" "string-template" "sudo-save" "sunrise-commander" "sunrise-x-buttons" "sunrise-x-checkpoints" "sunrise-x-loop" "sunrise-x-mirror" "sunrise-x-modeline" "sunrise-x-popviewer" "sunrise-x-tabs" "sunrise-x-tree" "swank-clojure" "switch-window" "tablature-mode" "tail" "test-unit" "textile-mode" "theme-roller" "tidy" "todochiku" "tuareg-mode" "twit" "twitter" "twittering-mode" "txt2tags-mode" "uim-el" "undo-tree" "vc-darcs" "vcl-mode" "verbiste" "vimpulse-surround" "vimpulse" "virtualenv" "vkill" "wanderlust" "weblogger-el" "whole-line-or-region" "wikipedia-mode" "windows-mode" "wl-gravatar" "workgroups" "wrap-region" "wwtime" "xclip" "xcscope+" "xcscope" "xml-parse" "xml-rpc-el" "yaml-mode" "yari")))
  '(global-hl-line-mode t)
  '(kill-whole-line t)
  '(org-agenda-files (quote ("~/.emacs.d/orgfiles/auth.org" "~/.emacs.d/orgfiles/blog.org" "~/.emacs.d/orgfiles/main.org" "~/.emacs.d/orgfiles/notes.org" "~/.emacs.d/orgfiles/openmapsua.org" "~/.emacs.d/orgfiles/python-api.org" "~/.emacs.d/orgfiles/refile.org" "~/.emacs.d/orgfiles/render.org" "~/.emacs.d/orgfiles/tiles.org" "~/.emacs.d/orgfiles/tilman.org" "~/.emacs.d/orgfiles/triton.org" "~/.emacs.d/orgfiles/vectormaps.org" "~/.emacs.d/orgfiles/work.org")))
  '(safe-local-variable-values (quote ((test-case-name . twisted\.trial\.test\.test_script) (test-case-name . twisted\.trial\.test\.test_runner) (test-case-name . twisted\.trial\.test\.test_tests))))
  '(show-paren-mode t))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "unknown" :family "Consolas"))))
  '(hl-line ((t (:inherit highlight)))))
 
