@@ -32,8 +32,8 @@
   `(add-to-list 'el-get-sources ',item))
 
 
-(el-get-add
- (:name nxhtml))
+;; (el-get-add
+;;  (:name nxhtml))
 
 ;; (el-get-add
 ;;  (:name ropemacs))
@@ -49,6 +49,9 @@
 
 ;; (el-get-add
 ;;  (:name python-mode))
+
+(el-get-add
+ (:name clojure-mode))
 
 (el-get-add
  (:name magit))
@@ -375,6 +378,7 @@ minibuffer to ease cutting and pasting."
 
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
+(setq TeX-save-query nil) ;;autosave before compiling
 (setq-default TeX-master nil)
 
 (add-hook 'LaTeX-mode-hook 'visual-line-mode)
